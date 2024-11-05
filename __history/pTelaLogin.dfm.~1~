@@ -1,0 +1,88 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsNone
+  Caption = 'Login - Teste de CRUD de Produto e Pedido'
+  ClientHeight = 243
+  ClientWidth = 593
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -33
+  Font.Name = 'Segoe UI'
+  Font.Style = [fsBold]
+  TextHeight = 45
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 593
+    Height = 57
+    Align = alTop
+    Caption = 'Teste de CRUD de Produto e Pedido'
+    TabOrder = 0
+    ExplicitWidth = 628
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 57
+    Width = 593
+    Height = 186
+    Align = alClient
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+    ExplicitLeft = 32
+    ExplicitTop = 105
+    ExplicitWidth = 628
+    ExplicitHeight = 159
+    object Label1: TLabel
+      Left = 64
+      Top = 24
+      Width = 40
+      Height = 15
+      Caption = 'Usu'#225'rio'
+    end
+    object Label2: TLabel
+      Left = 64
+      Top = 64
+      Width = 32
+      Height = 15
+      Caption = 'Senha'
+    end
+    object Edit1: TEdit
+      Left = 134
+      Top = 21
+      Width = 369
+      Height = 23
+      TabOrder = 0
+    end
+    object Edit2: TEdit
+      Left = 134
+      Top = 61
+      Width = 369
+      Height = 23
+      TabOrder = 1
+    end
+    object Button1: TButton
+      Left = 208
+      Top = 104
+      Width = 75
+      Height = 25
+      Caption = 'Login'
+      TabOrder = 2
+    end
+    object Button2: TButton
+      Left = 352
+      Top = 104
+      Width = 75
+      Height = 25
+      Caption = 'Sair'
+      TabOrder = 3
+    end
+  end
+end

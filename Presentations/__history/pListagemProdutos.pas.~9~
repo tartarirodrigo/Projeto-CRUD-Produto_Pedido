@@ -1,0 +1,46 @@
+unit pListagemProdutos;
+
+interface
+
+uses
+  Winapi.Windows,
+  Winapi.Messages,
+  System.SysUtils,
+  System.Variants,
+  System.Classes,
+  Vcl.Graphics,
+  Vcl.Controls,
+  Vcl.Forms,
+  Vcl.Dialogs, Vcl.ExtCtrls, Data.DB, Vcl.Grids, Vcl.DBGrids, Vcl.StdCtrls;
+
+type
+  TfrmListaProdutos = class(TForm)
+    Panel1: TPanel;
+    Panel2: TPanel;
+    DBGrid1: TDBGrid;
+    Panel3: TPanel;
+    btnCadastrar: TButton;
+    dsListProds: TDataSource;
+    procedure btnCadastrarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmListaProdutos: TfrmListaProdutos;
+
+implementation
+
+uses
+  pCadastroProdutos;
+
+{$R *.dfm}
+
+procedure TfrmListaProdutos.btnCadastrarClick(Sender: TObject);
+begin
+  Application.CreateForm(TfrmcadProdutos, frmcadProdutos);
+end;
+
+end.

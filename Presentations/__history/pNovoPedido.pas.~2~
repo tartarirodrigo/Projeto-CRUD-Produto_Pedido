@@ -1,0 +1,31 @@
+unit pNovoPedido;
+
+interface
+
+uses
+  Winapi.Windows,
+  Winapi.Messages,
+  System.SysUtils,
+  System.Variants,
+  System.Classes,
+  Vcl.Graphics,
+  Vcl.Controls,
+  Vcl.Forms,
+  Vcl.Dialogs;
+
+type
+  TfrmNovoPedido = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmNovoPedido: TfrmNovoPedido;
+
+implementation
+
+{$R *.dfm}
+
+end.

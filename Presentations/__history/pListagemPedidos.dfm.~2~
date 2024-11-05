@@ -1,0 +1,30 @@
+object frmListPedidos: TfrmListPedidos
+  Left = 0
+  Top = 0
+  Caption = 'Teste de CRUD de Produto e Pedido - Listagem de Pedidos'
+  ClientHeight = 442
+  ClientWidth = 628
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 15
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 628
+    Height = 57
+    Align = alTop
+    Caption = 'Listagem de Pedidos'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -33
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    ExplicitWidth = 624
+  end
+end

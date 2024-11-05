@@ -1,0 +1,143 @@
+object frmCadEmpresa: TfrmCadEmpresa
+  Left = 0
+  Top = 0
+  Caption = 'Teste de CRUD de Produto e Pedido - Tela de Cadastro da Empresa'
+  ClientHeight = 286
+  ClientWidth = 628
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  Position = poDesktopCenter
+  TextHeight = 15
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 628
+    Height = 57
+    Align = alTop
+    Caption = 'Cadastro da Empresa'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -33
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    ExplicitWidth = 624
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 57
+    Width = 628
+    Height = 229
+    Align = alClient
+    TabOrder = 1
+    ExplicitTop = 63
+    object Label1: TLabel
+      Left = 32
+      Top = 24
+      Width = 61
+      Height = 15
+      Caption = 'Id Empresa:'
+    end
+    object Label2: TLabel
+      Left = 32
+      Top = 53
+      Width = 27
+      Height = 15
+      Caption = 'CNPJ'
+    end
+    object Label3: TLabel
+      Left = 32
+      Top = 82
+      Width = 33
+      Height = 15
+      Caption = 'Nome'
+    end
+    object Label4: TLabel
+      Left = 32
+      Top = 111
+      Width = 49
+      Height = 15
+      Caption = 'Endere'#231'o'
+    end
+    object Label5: TLabel
+      Left = 32
+      Top = 140
+      Width = 44
+      Height = 15
+      Caption = 'Telefone'
+    end
+    object Label6: TLabel
+      Left = 32
+      Top = 169
+      Width = 34
+      Height = 15
+      Caption = 'E-mail'
+    end
+    object edIdEmpresa: TDBEdit
+      Left = 99
+      Top = 21
+      Width = 121
+      Height = 23
+      ReadOnly = True
+      TabOrder = 0
+    end
+    object edNome: TDBEdit
+      Left = 99
+      Top = 79
+      Width = 494
+      Height = 23
+      TabOrder = 1
+    end
+    object EdEndereco: TDBEdit
+      Left = 99
+      Top = 108
+      Width = 494
+      Height = 23
+      TabOrder = 2
+    end
+    object edTelefone: TDBEdit
+      Left = 99
+      Top = 137
+      Width = 121
+      Height = 23
+      TabOrder = 3
+    end
+    object edEmail: TDBEdit
+      Left = 99
+      Top = 166
+      Width = 334
+      Height = 23
+      TabOrder = 4
+    end
+    object mskCNPJ: TMaskEdit
+      Left = 99
+      Top = 50
+      Width = 85
+      Height = 23
+      EditMask = '00\.000\.000\/0000\-00;0;_'
+      MaxLength = 18
+      TabOrder = 5
+      Text = ''
+    end
+    object btnConsCNPJ: TButton
+      Left = 194
+      Top = 50
+      Width = 111
+      Height = 23
+      Caption = 'Consultar CNPJ'
+      TabOrder = 6
+      OnClick = btnConsCNPJClick
+    end
+  end
+  object ClientDataSet1: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    Left = 400
+    Top = 73
+  end
+end

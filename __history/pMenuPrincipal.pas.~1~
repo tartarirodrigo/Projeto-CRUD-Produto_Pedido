@@ -1,0 +1,35 @@
+unit pMenuPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus;
+
+type
+  TForm10 = class(TForm)
+    MainMenu1: TMainMenu;
+    Arquivo1: TMenuItem;
+    Arquivo2: TMenuItem;
+    Vendas1: TMenuItem;
+    Vendas2: TMenuItem;
+    Sair1: TMenuItem;
+    Empresa1: TMenuItem;
+    Produto1: TMenuItem;
+    Pedidos1: TMenuItem;
+    Sobre1: TMenuItem;
+    Sobre2: TMenuItem;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form10: TForm10;
+
+implementation
+
+{$R *.dfm}
+
+end.

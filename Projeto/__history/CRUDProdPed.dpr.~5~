@@ -1,0 +1,24 @@
+program CRUDProdPed;
+
+uses
+  Vcl.Forms,
+  pTelaLogin in '..\Presentations\pTelaLogin.pas' {frmLogin},
+  pCadEmpresa in '..\Presentations\pCadEmpresa.pas' {frmCadEmpresa},
+  pListagemProdutos in '..\Presentations\pListagemProdutos.pas' {frmListaProdutos},
+  pCadastroProdutos in '..\Presentations\pCadastroProdutos.pas' {frmcadProdutos},
+  pEdicaoProdutos in '..\Presentations\pEdicaoProdutos.pas' {frmEdtProdutos},
+  pExclusaoProdutos in '..\Presentations\pExclusaoProdutos.pas' {frmExclProdutos},
+  pListagemPedidos in '..\Presentations\pListagemPedidos.pas' {frmListPedidos},
+  pNovoPedido in '..\Presentations\pNovoPedido.pas' {frmNovoPedido},
+  pExclusaoPedido in '..\Presentations\pExclusaoPedido.pas' {frmExclPedido},
+  pMenuPrincipal in '..\Presentations\pMenuPrincipal.pas' {frmMenuPrincipal},
+  bLogin in '..\Business\bLogin.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmMenuPrincipal, frmMenuPrincipal);
+  Application.Run;
+end.
